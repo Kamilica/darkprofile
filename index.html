@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Landing Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link rel="stylesheet" href="main.css">
+        
+        <!-- Fonts -->
+        <link data-require="fontawesome@*" data-semver="4.5.0" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        
+        <!-- JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </head>
+    
+    
+    <body>
+        
+        
+        <div id="banner">
+                
+            <!-- NAVIGATION -->
+            <nav>
+                <div class="container">
+                    
+                    <!-- Toggle Navigation -->
+
+                    <a href="#" class="pull-left"><img src="img/logo.png"></a>
+                    
+                    <p><a href="">Search engine directory</a></p>
+                    
+                    <div class="hidden-xs">
+                        <ul class="navbar-right">
+                            <li><a href="#" class="links"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Sign up</a></li>
+                            <li><a href="#" class="links"><i class="fa fa-sign-in" aria-hidden="true"></i> Log in</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Mobile Navbar -->
+                    <section class="dropdown visible-xs">
+                        <a class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+                            <span class="glyphicon glyphicon-menu-hamburger"></span>
+                        </a>
+                    <ul class="dropdown-menu pull-right" role="menu">
+                        <li><a href="#" class="links"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Sign up</a></li>
+                        <li><a href="#" class="links"><i class="fa fa-sign-in" aria-hidden="true"></i> Log in</a></li>
+                    </ul>
+                    </section>
+
+                </div> <!-- /.container -->
+            </nav>
+            
+            
+            <!-- BANNER TEXT -->
+            <div class="col-md-12" id="banner-text">
+                <p>Dark Profile Your Personal Search Engine</p>
+                <h3>SEARCH.<span style="color: #5bbc2e">BROWSE.</span>EXPLORE</h3>
+            </div> <!-- /.-md-12 -->
+            
+            <!-- Search form -->
+            <div class="col-centered col-lg-6" id="search-form">
+                <div class="input-group">
+                    <input type="text" class="form-control">
+                    <span class="input-group-btn">
+                        <button id="search-button" class="btn btn-default" type="button"><i class="fa fa-search" aria-hidden="true"></i> Search</button>
+                    </span>
+                </div><!-- /input-group -->
+                    
+               <!-- Add more search request -->
+                <div class="col-lg-10 col-xs-7" id="add-button">
+                    <button class="btn" type="button">
+                        <span class="text-nowrap">+ Add more search request</span>
+                    </button>
+                </div> <!-- /.add-button -->
+                
+            </div><!-- /.col-lg-6 -->
+
+            
+        
+            
+        </div> <!-- /#banner -->
+        
+        <div class="footer hidden-sm hidden-xs" style="bottom:0;">Copyright. Darkprofile.com</div>
+        
+
+    </body>
+</html>
