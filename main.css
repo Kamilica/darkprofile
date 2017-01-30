@@ -1,0 +1,255 @@
+@font-face {
+  font-family: 'Gotham Medium';
+  src: url('fonts/GOTHAM-MEDIUM.TTF'); 
+}
+
+@font-face {
+  font-family: 'Gotham Light';
+  src: url('fonts/GOTHAM-LIGHT.TTF'); 
+}
+
+html,body {
+    height: 100%;
+}
+
+/* NAVIGATION Section */
+nav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #fff;
+    font-family: "Gotham Medium", sans-serif;
+}
+
+nav img {
+    position:relative;
+    z-index: 1;
+}
+
+nav a, nav p, li {
+    display: inline;
+}
+
+nav p, nav ul {
+    padding-top: 20px;
+}
+
+nav p {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    margin: auto;
+    margin-top: -35px;
+}
+
+nav p a {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #5bbc2e;
+}
+
+nav a:hover {
+    color: #3f8320;
+    text-decoration: none;
+}
+
+.links {
+   position:relative;
+}
+
+nav ul a {
+    color: #959595;
+    text-transform: uppercase; 
+}
+
+nav ul li:first-child {
+    padding-right: 20px;
+}
+
+nav ul i {
+    padding-right: 5px;
+}
+
+
+/* MOBILE NavBar */
+nav .dropdown {float: right; margin-top: 10px;}
+nav .dropdown a span {font-size: 17px; color:#959595;}
+nav .dropdown ul {padding: 0px 0px 20px 0;}
+nav .dropdown ul li {
+    text-align: right;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+}
+
+
+/* BANNER Section */
+#banner {
+    background-image: url('img/banner.png');
+    background-position: center;
+    display:block;
+    overflow:auto;
+    background-repeat: no-repeat;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+}
+
+#banner-text {
+     text-align: center;
+}
+
+#banner p {
+    font-family: 'Gotham Light', sans-serif;
+    font-size: 20px;
+    color: #acacac;
+    padding-top: 70px;
+}
+
+#banner h3 {
+    font-family: "Gotham Medium", sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    text-transform: uppercase;
+    color: #494949;
+    padding-top: 20px;
+    padding-bottom: 80px;
+}
+
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+/* SEARCH FORM Section */
+
+#search-form {
+    padding-bottom: 100px;
+}
+
+#search-form input {
+    border: solid #5bbc2e;
+    padding:18px;
+}
+#search-form #search-button {
+    background-color: #5bbc2e;
+    color: #fff;
+    border-color: #5bbc2e;
+    font-size: 20px;
+}
+
+#search-form button i {
+    padding-right: 5px;
+}
+
+#add-button {
+    margin-top: 15px;
+    color: #5bbc2e;
+    white-space: normal;
+}
+
+#banner .col-xs-7 {
+    padding-left: 0;
+}
+
+#add-button button {
+    background-color: transparent;
+    border: 1px solid #c4e5b9;
+    padding: 7px 135px;
+    color: #5bbc2e;
+    font-family: "Gotham Light", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 7px;
+}
+
+
+/* COPYRIGHT Footer */
+.footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+    font-size: 12px;
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
+}
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width:991px) {
+    nav p {
+        display: none;
+    }
+}
+
+@media screen and (max-width:621px) {
+        #banner h3 {
+            font-size: 40px;
+        }
+}
+@media screen and (max-width:510px) {
+    nav ul {
+        display: none;
+    }
+}
+
+@media screen and (max-width:865px) {
+    #banner h3 {
+        font-size: 6vw;
+        padding-bottom: 50px;
+    }
+    #banner p {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width:480px) {
+    #banner h3 {
+        padding-bottom: 20px;
+        padding-top: 5px;
+    }
+    
+    #add-button .text-nowrap {
+        white-space: nowrap;
+        text-align: left;
+    }
+    
+    #add-button button {
+        padding: 7px 85px;
+    }
+    
+    #banner p {
+        padding-top: 40px;
+    }
+
+}
+
+@media screen and (max-width:390px) {
+    #add-button button {
+    padding: 7px 60px;
+} 
+}
+
+@media screen and (max-width:360px) {
+    #add-button button {
+    padding: 7px 40px;
+} 
+}
+
+@media screen and (min-width:481px) and (max-width: 510px) {
+    #add-button button {
+        padding: 7px 120px;
+    }
+}
+
+@media screen and (min-width:391px) and (max-width: 410px) {
+    #add-button button {
+        padding: 7px 75px;
+    }
+}
